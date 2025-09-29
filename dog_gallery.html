@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery img:hover {
+            border: 2px solid black;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 992px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Dog Gallery</h1>
+    <div class="gallery">
+        <img src="https://images.dog.ceo/breeds/husky/n02110185_1469.jpg" alt="Dog 1">
+        <img src="https://images.dog.ceo/breeds/beagle/n02088364_11136.jpg" alt="Dog 2">
+        <img src="https://images.dog.ceo/breeds/terrier-norwich/n02094258_430.jpg" alt="Dog 3">
+        <img src="https://images.dog.ceo/breeds/retriever-golden/n02099601_4503.jpg" alt="Dog 4">
+        <img src="https://images.dog.ceo/breeds/papillon/n02086910_6021.jpg" alt="Dog 5">
+        <img src="https://images.dog.ceo/breeds/dane-great/n02109047_3524.jpg" alt="Dog 6">
+        <img src="https://images.dog.ceo/breeds/rottweiler/n02106550_10138.jpg" alt="Dog 7">
+        <img src="https://images.dog.ceo/breeds/akita/512px-Ainu-Dog.jpg" alt="Dog 8">
+        <img src="https://images.dog.ceo/breeds/collie-border/n02106166_1252.jpg" alt="Dog 9">
+    </div>
+</body>
+</html>
